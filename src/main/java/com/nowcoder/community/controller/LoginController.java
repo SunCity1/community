@@ -113,8 +113,8 @@ public class LoginController implements CommunityConstant {
         //检查账号，密码
         int expiredSeconds = rememberme ? REMEMBER_EXPIRED_SECONDS : DEFAULT_EXPIRED_SECONDS;
         Map<String, Object> map = userService.login(username, password, expiredSeconds);
-        if (map.containsKey("Ticket")) {
-            Cookie cookie = new Cookie("ticket", map.get("Ticket").toString());
+        if (map.containsKey("ticket")) {
+            Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
             cookie.setPath(contextPath);
             cookie.setMaxAge(expiredSeconds);
             response.addCookie(cookie);
