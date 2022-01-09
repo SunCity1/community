@@ -14,9 +14,11 @@ public class WbMvcConfig implements WebMvcConfigurer {
 //    @Autowired
 //    private AlphaInterceptor alphaInterceptor;
 
+    // 保证用户的各个请求都能保持网站用户登录状态
     @Autowired
     private LoginTicketInterceptor loginTicketInterceptor;
 
+    // 防止网站未登录状态访问用户数据的链接
     @Autowired
     private LoginRequiredInterceptor loginRequiredInterceptor;
 
