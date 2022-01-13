@@ -138,4 +138,12 @@ public class MessageController {
 
         return CommunityUtil.getJSONString(0);
     }
+
+    @RequestMapping(path = "/letter/remove/{messageId}", method = RequestMethod.GET)
+    @ResponseBody
+    public String removeMessage(@PathVariable("messageId") int messageId) {
+        messageService.removeMessage(new ArrayList<>(messageId));
+        return CommunityUtil.getJSONString(0);
+    }
+
 }
