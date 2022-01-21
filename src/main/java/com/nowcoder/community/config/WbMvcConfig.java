@@ -20,8 +20,8 @@ public class WbMvcConfig implements WebMvcConfigurer {
     private LoginTicketInterceptor loginTicketInterceptor;
 
     // 防止网站未登录状态访问用户数据的链接
-    @Autowired
-    private LoginRequiredInterceptor loginRequiredInterceptor;
+//    @Autowired
+//    private LoginRequiredInterceptor loginRequiredInterceptor;
 
     @Autowired
     private MessageInterceptor messageInterceptor;
@@ -35,8 +35,8 @@ public class WbMvcConfig implements WebMvcConfigurer {
         registry.addInterceptor(loginTicketInterceptor)
                 .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg", "/**/kaptcha");
 
-        registry.addInterceptor(loginRequiredInterceptor)
-                .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg", "/**/kaptcha");
+//        registry.addInterceptor(loginRequiredInterceptor)
+//                .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg", "/**/kaptcha");
 
         registry.addInterceptor(messageInterceptor)
                 .excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg", "/**/kaptcha");
