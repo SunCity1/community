@@ -189,7 +189,7 @@ public class UserController implements CommunityConstant {
         page.setLimit(5);
         page.setRows(discussPostCount);
 
-        List<DiscussPost> list = discussPostService.findDiscussPosts(userId, page.getOffset(), page.getLimit());
+        List<DiscussPost> list = discussPostService.findDiscussPosts(userId, page.getOffset(), page.getLimit(), 0);
 
         List<Map<String, Object>> discussPosts = new ArrayList<>();
         if (list != null) {
