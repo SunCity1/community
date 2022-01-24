@@ -15,8 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@Component
-@Aspect
+//@Component
+//@Aspect
 public class ServiceLogAspect {
 
     private static final Logger logger = LoggerFactory.getLogger(ExceptionAdvice.class);
@@ -24,7 +24,6 @@ public class ServiceLogAspect {
     // 切点
     @Pointcut("execution(* com.nowcoder.community.service.*.*(..))")
     public void pointcut() {
-
     }
 
     @Before("pointcut()")
