@@ -16,8 +16,8 @@ while achieving website UV and dau data statistics.
 ## 开发环境
 |      技术      |           版本号            |                             官网                             |
 | :------------: | :-----------------------: | :----------------------------------------------------------: |
-| JDK |	 | 11 |	 https://openjdk.java.net/install/ |
-| Mysql |	 | 5.7 | 	https://www.mysql.com/ |
-| Redis |	 | 3.2 |	https://redis.io/download |
+| JDK  | 11 |	 https://openjdk.java.net/install/ |
+| Mysql | 5.7 | 	https://www.mysql.com/ |
+| Redis | 3.2 |	https://redis.io/download |
 | Kafka |	2.3.0	 | https://kafka.apache.org/downloads |
 | nginx |	1.10 |	http://nginx.org/en/download.html |
