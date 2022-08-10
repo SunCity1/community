@@ -14,10 +14,10 @@ while achieving website UV and dau data statistics.
 ![image](https://user-images.githubusercontent.com/63488829/183834262-21679adc-69c7-4987-a813-d8bcc0618eb3.png)
 
 ## 开发环境
-工具	版本号	下载
-JDK	11	https://openjdk.java.net/install/
-Mysql	5.7	https://www.mysql.com/
-Redis	3.2	https://redis.io/download
-Elasticsearch	6.4.3	https://www.elastic.co/downloads
-Kafka	2.3.0	https://kafka.apache.org/downloads
-nginx	1.10	http://nginx.org/en/download.html
+|      技术      |           版本号            |                             官网                             |
+| :------------: | :-----------------------: | :----------------------------------------------------------: |
+| JDK |	 | 11 |	 https://openjdk.java.net/install/ |
+| Mysql |	 | 5.7 | 	https://www.mysql.com/ |
+| Redis |	 | 3.2 |	https://redis.io/download |
+| Kafka |	2.3.0	 | https://kafka.apache.org/downloads |
+| nginx |	1.10 |	http://nginx.org/en/download.html |
